@@ -11,6 +11,7 @@ class CreateDestinations < ActiveRecord::Migration[7.0]
       t.boolean :menu_visibility, default: false
       t.boolean :active, default: true, index: true
       t.date :valid_till
+      t.boolean :show_title_on_card, default: true
 
       t.timestamps
     end
